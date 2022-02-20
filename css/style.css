@@ -1,0 +1,200 @@
+* {
+    box-sizing: border-box;
+    padding:0;
+    margin: 0;
+}
+
+p {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.cabeçalho {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 150px;
+    font-size: 1.4rem;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.cabeçalho-logo a {
+    color: #D6000D;
+    font-size: 2.3rem;
+    font-style: italic;
+    font-weight: 700;
+    
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.nav-cabeçalho a {
+    margin-left: 34px;
+    color: gray;
+}
+
+.botao-cabecalho {
+     margin-left: 30px;
+     background-color: red;
+     max-width: 40%;
+     width: 120px;
+     border-radius: 8px;
+     padding: 7px;
+     color: seashell;
+     
+
+}
+
+.primeira-section {
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 200px;
+    justify-content: space-between;
+    
+    
+}
+
+.segunda-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.terceira-section{
+    display: flex;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.quarta-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+.quarta-section-conteudo-escrito1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.primeiro-conteudo-escrito {
+    background-color: rgb(231, 229, 229);
+    text-align: center;
+    width: 450px;
+    height: 150px;
+    margin-left: 20px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    max-width: 450px;
+}
+
+.conteudo-escrito-link1 {
+    background: #D6000D;
+    color: antiquewhite;
+    border: 1px #D6000D solid;
+    padding: 6px 28px 6px 28px;
+    border-radius: 9px;
+    font-weight: 900;
+    font-family: roboto;
+    margin-top: 25px;
+}
+
+
+.segundo-conteudo-escrito {
+    background-color: rgb(231, 229, 229);
+    text-align: center;
+    width: 450px;
+    height: 150px;
+    margin-left: 20px;
+    padding: 15px;
+    display: flex;
+    border-radius: 10px;
+    max-width: 450px;
+}
+
+
+
+.primeiro-conteudo-escrito .circulo {
+    display: flex;
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 50%;
+    background:#D6000D;
+    padding: 30px;
+    margin-left: 10px;
+    
+}
+
+.segundo-conteudo-escrito .circulo {
+    display: flex;
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 50%;
+    background:#D6000D;
+    padding: 30px;
+    margin-left: 10px;
+}
+
+.conteudo-escrito-quarta-section1{
+    display: flex;
+    margin-left: 19px;
+    text-align: start;
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', "Roboto", Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.conteudo-escrito-quarta-section2 {
+    display: flex;
+    margin-left: 19px;
+    text-align: start;
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', "Roboto", Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+
+
+
+
+.rodape {
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    margin: 0 auto;
+    height: 240px;
+    background-color: black;
+    align-items: center;
+}
+
+.rodape div h3,h2  {
+    color: blanchedalmond;
+}
+
+.rodape div h2 {
+    font-size: 26px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+.rodape div p {
+    color: rgb(221, 221, 221);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.rodape div a{
+    color: rgb(221, 221, 221);
+}
+
