@@ -1,12 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@400;512&family=Lato:ital,wght@0,100;0,300;0,400;0,900;1,400;1,700;1,900&display=swap');
+
+/*
+*font-family: 'Antonio', sans-serif;
+*font-family: 'Lato', sans-serif;
+*/
+:root {
+--primary-color: #D6000D;
+--secundary-color: rgb(2, 1, 1);
+
+}
 * {
     box-sizing: border-box;
     padding:0;
     margin: 0;
 }
 
-p {
-    display: flex;
+body,main,footer {
+    font-family: 'Antonio', sans-serif;
+    
 }
+
 
 a {
     text-decoration: none;
@@ -17,32 +30,46 @@ main {
     margin: 0 auto;
 }
 
+
+/*--------------------- Style do cabealho -------------*/
+
 .cabeçalho {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 150px;
     font-size: 1.4rem;
     align-items: center;
     margin-top: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
-.cabeçalho-logo a {
-    color: #D6000D;
+.cabeçalho-logo .logo1 {
+    color: var(--primary-color);
     font-size: 2.3rem;
     font-style: italic;
     font-weight: 700;
-    
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+.nav-cabeçalho {
+    align-items: center;
+    display: flex;
+    gap: 25px;
+    justify-content: space-around;
+}
+
 .nav-cabeçalho a {
-    margin-left: 34px;
-    color: gray;
+    color: var(--secundary-color)
+}
+
+.logo2 {
+    color: var(--secundary-color);
+    font-size: 2.3rem;
 }
 
 .botao-cabecalho {
-     margin-left: 30px;
-     background-color: red;
+     background-color: var(--primary-color);
      max-width: 40%;
      width: 120px;
      border-radius: 8px;
@@ -51,6 +78,10 @@ main {
      
 
 }
+
+
+
+/*-------------- Style of primary-Section-Main ------------------*/
 
 .primeira-section {
 
@@ -62,12 +93,36 @@ main {
     
 }
 
+.conteudo-escrito3 {
+    display: flex;
+}
+
+.primeira-section-conteudo-escrito{
+    margin-left: 30px;
+}
+
 .segunda-section {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 20px;
 }
+
+.segunda-section-conteudo-escrito{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.img-icon {
+    margin-right: 10px;
+}
+
+.conteudo-img-paragrafo{
+    display: flex;
+}
+
 
 .terceira-section{
     display: flex;
@@ -101,15 +156,59 @@ main {
     max-width: 450px;
 }
 
+.conteudo-escrito1{
+    font-weight: 700;
+    
+}
+
+.conteudo-escrito2 {
+    font-size: 50px;
+    color: var(--primary-color);
+
+}
+
+.formulario-terceira-section {
+    margin-top: 15px;
+}
+
+.terceira-section-formulario {
+    margin-left: 23px;
+}
+
+.input-envio1 {
+   background-color:  rgb(231, 229, 229);
+   width: 145px;
+   height: 39px;
+   border-radius: 5px;
+   border: 1px ;
+}
+
+.input-ligamos {
+    width: 145px;
+    height: 39px;
+    border-radius: 5px;
+    border: 1px;
+    background-color: var(--primary-color);
+    color:antiquewhite;
+    text-align: center;
+    margin-left: 4px;
+    
+    
+}
+
 .conteudo-escrito-link1 {
-    background: #D6000D;
+    background: var(--primary-color);
     color: antiquewhite;
-    border: 1px #D6000D solid;
+    border: 1px var(--primary-color) solid;
     padding: 6px 28px 6px 28px;
     border-radius: 9px;
     font-weight: 900;
     font-family: roboto;
-    margin-top: 25px;
+    margin-top: 53px;
+    padding: 10px;
+    width: 16em;
+    text-align: center;
+
 }
 
 
@@ -132,7 +231,7 @@ main {
     max-width: 50px;
     max-height: 50px;
     border-radius: 50%;
-    background:#D6000D;
+    background:var(--primary-color);
     padding: 30px;
     margin-left: 10px;
     
@@ -143,7 +242,7 @@ main {
     max-width: 50px;
     max-height: 50px;
     border-radius: 50%;
-    background:#D6000D;
+    background:var(--primary-color);
     padding: 30px;
     margin-left: 10px;
 }
@@ -164,8 +263,30 @@ main {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', "Roboto", Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
+.segundo-conteudo-escrito2 {
+    font-weight: 100;
+
+}
+
+.construtora-minari,.escola-feliz {
+    text-align: start;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.escola-feliz {
+    margin-top: 35px;
+}
+
+h4 {
+    display: flex;
+    text-align: start;
+    margin-left: 20px;
+    font-size: 12px;
+}
 
 
+/*--------------------------Style of footer-----------------------------*/
 
 
 .rodape {
@@ -174,27 +295,208 @@ main {
     max-width: 100%;
     margin: 0 auto;
     height: 240px;
-    background-color: black;
+    background: black;
     align-items: center;
 }
 
-.rodape div h3,h2  {
-    color: blanchedalmond;
+.rodape div h3,.primeiro-titulo-rodape  {
+    color: #fff;
 }
 
-.rodape div h2 {
-    font-size: 26px;
+.rodape div .primeiro-titulo-rodape {
+    font-size: 30px;
     font-weight: 700;
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
 }
 
-.rodape div p {
+.rodape div .conteudo-rodape{
     color: rgb(221, 221, 221);
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .rodape div a{
     color: rgb(221, 221, 221);
+    
 }
 
+
+
+.segunda-div-rodape{
+    color: #fff;
+    
+}
+
+.sedunda-div-rodape p {
+    display: block;
+}
+
+
+.quarta-div-rodape img {
+    margin-top: 20px;
+    margin-left: 15px;
+
+}
+
+.terceira-div-rodape{
+    margin-top: 50px;
+}
+
+.quarto-titulo-rodape{
+    margin-left: 9px;
+}
+
+/*<----------------------------Midia Queries------------------------>*/
+
+@media (max-width: 944px) {
+    .cabeçalho{
+        display: block;
+        text-align: center;
+        margin-bottom: 51px;
+    }
+    .botao-cabecalho {
+        display: none;
+    }
+
+    .imagem-primeira-section{
+        width: 300px;
+        height: 200px;
+        margin-bottom: 40px;
+    }
+
+    .imagem-segunda-section {
+        width: 250px;
+        height: 200px;
+        
+    }
+
+    
+
+    .segunda-section-conteudo-escrito{
+        align-items: flex-start;
+        margin: 0;
+        margin-right: 60px;
+        margin-top: 20px;
+        
+    }
+
+    .conteudo-escrito1 {
+        text-align: center;
+    }
+
+    .conteudo-escrito-link1 {
+        align-items: center;
+        margin-left: 17px;
+        padding: 17px;
+        border-radius: 16px;
+        margin-top: 26px;
+    }
+
+    .primeira-section {
+        flex-direction: column;
+        margin-bottom: 140px;
+        
+    }
+
+    .primeira-section-conteudo-escrito{
+        margin-left: 0px;
+    }
+
+    .primeiro-conteudo-escrito{
+        width: 90vw;
+        height: auto;
+        margin: auto;
+    }
+
+    .segundo-conteudo-escrito {
+        width: 90vw;
+        height: auto;
+        margin: auto;
+    }
+
+
+    .segunda-section {
+        flex-direction: column-reverse;
+        margin-bottom: 50px;
+    }
+
+    .segunda-section-imagem {
+        margin-bottom: 22px;
+    }
+
+    .input-envio1, .input-ligamos {
+        width: 189px;
+        border-radius: 9px;
+        margin-right: 35px;
+    }
+
+    .paragrafo-tercdeira-section {
+        margin-right: 35px;
+
+
+    }
+
+    .terceira-section {
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+
+    .terceira-section-formulario {
+        margin-left: 0;
+        width: 100vw;
+        text-align: center;
+        margin-top: 20px;
+        margin: 0%;
+        
+    }
+
+    .formulario-terceira-section {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        
+    }
+
+    .quarta-section-conteudo-escrito1 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .quarta-section {
+        margin-bottom: 30px;
+    }
+
+    .rodape {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+        align-items: flex-start;
+        padding-left: 40px;
+    }
+    .primeiro-titulo-rodape:first-child{
+        align-items: flex-end;
+        margin-bottom: -10px;
+        
+        
+      }
+    .primeira-div-rodape{
+        margin-top: 20px ;
+        text-align: center;
+        width: 292px;
+    }
+
+    .terceira-div-rodape {
+        margin-top: 0px;
+    }
+
+    .quarta-div-rodape {
+        margin-bottom: 20px;
+    }
+
+    .quarto-titulo-rodape {
+        margin-left: 0;
+    }
+    
+}
